@@ -9,18 +9,30 @@ function readableTime(createdDateMili) {
     let seconds = Math.floor(((new Date().getTime() / 1000) - createdDateMili));
     let interval = seconds / intervals.forYears;
     if (interval > 1) {
+        if (Math.floor(interval) === 1) {
+            return Math.floor(interval) + " year";
+        }
         return Math.floor(interval) + " years";
     }
     interval = seconds / intervals.forMonths;
     if (interval > 1) {
+        if (Math.floor(interval) === 1) {
+            return Math.floor(interval) + " month";
+        }
         return Math.floor(interval) + " months";
     }
     interval = seconds / intervals.forDays;
     if (interval > 1) {
+        if (Math.floor(interval) === 1) {
+            return Math.floor(interval) + " day";
+        }
         return Math.floor(interval) + " days";
     }
     interval = seconds / intervals.forHours;
     if (interval > 1) {
+        if (Math.floor(interval) === 1) {
+            return Math.floor(interval) + " hour";
+        }
         return Math.floor(interval) + " hours";
     }
     interval = seconds / intervals.forMinutes;
