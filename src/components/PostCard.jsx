@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text, Image, TouchableWithoutFeedback, Button, Dimensions } from 'react-native';
+import { StyleSheet, View, Text, Image, TouchableWithoutFeedback } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 import Icon from "react-native-vector-icons/FontAwesome5"
 import Divider from './Divider';
